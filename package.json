@@ -8,17 +8,40 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "airbnb/hooks",
+      "airbnb-typescript",
+      "plugin:jsx-a11y/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+    ]
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "tabWidth": 2
+  },
   "dependencies": {
+    "highcharts": "^11.4.8",
+    "highcharts-react-official": "^3.2.1",
+    "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "14.2.15",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5"
   }
 }
